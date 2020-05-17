@@ -1,0 +1,1 @@
+export const STORAGE_QUESTIONS_URL = "http://localhost:8011/storage/question";

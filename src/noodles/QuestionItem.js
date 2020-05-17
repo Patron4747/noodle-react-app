@@ -1,33 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
 import PropTypes from "prop-types";
 import Answer from "./Answer";
+import axios from "axios";
+import {STORAGE_QUESTIONS_URL} from "../constants";
 
 function QuestionItem({questionId}) {
 
-    const questionItem = {
-        id: questionId,
-        title: "В чем смысл жизни?",
-        answers: [
-            {
-                id: 4,
-                text: "Его нет...",
-                answers: [
-                    {
-                        id: 8,
-                        text: "Как это его нет, еще как есть!"
-                    },
-                    {
-                        id: 9,
-                        text: "Согласен, он есть!"
-                    }
-                ]
-            },
-            {
-                id: 5,
-                text: "В том, чтоб написать как можно больше строчек кода"
-            }
-        ]
-    };
+    const [response, setResponse] = React.useState({question: null, answers: null});
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const questionResponse = await axios(STORAGE_QUESTIONS_URL + `/getQuestion?id=${questionId}`);
+            const answersResponse = await axios(STORAGE_QUESTIONS_URL + `/${questionId}/getAnswersTree`);
+            setResponse({question: questionResponse.data, answers: answersResponse.data});
+        };
+        fetchData();
+    }, [questionId]);
 
     function walkTheAnswers(result, answers, depth) {
         answers.forEach(answer => {
@@ -41,10 +29,12 @@ function QuestionItem({questionId}) {
 
     return (
         <div>
-            <h1>{questionItem.title}</h1>
-            {walkTheAnswers([], questionItem.answers, 0).map(answer => {
-                return <Answer answer={answer}/>
-            })}
+            {response.question && <h1>{response.question.title}</h1>}
+            {response.answers && walkTheAnswers([], response.answers, 0)
+                .map(answer => {
+                    return <Answer answer={answer}/>
+                })
+            }
         </div>
     )
 }
