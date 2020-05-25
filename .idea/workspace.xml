@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babf3822-0dab-4270-9b0b-7016d91f1b36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuestionItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/noodles/QuestionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/noodles/QuestionItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/noodles/QuestionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/noodles/QuestionList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/url.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/noodles/Answer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnswerItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/noodles/QuestionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnswerList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/noodles/QuestionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuestionList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +32,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\WebStormProjects\noodle-react-app\src\constants" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -74,7 +80,10 @@
       <workItem from="1589463615296" duration="1632000" />
       <workItem from="1589539763284" duration="9642000" />
       <workItem from="1589653285494" duration="2763000" />
-      <workItem from="1589702541159" duration="6559000" />
+      <workItem from="1589702541159" duration="6715000" />
+      <workItem from="1589785160021" duration="396000" />
+      <workItem from="1589788254592" duration="5525000" />
+      <workItem from="1590247286309" duration="2728000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1589354577121</created>
@@ -83,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589354577121</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add axios, question and answers http calls">
+      <created>1589709992030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589709992030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add axios, question and answers http calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="add axios, question and answers http calls" />
   </component>
 </project>

@@ -1,17 +1,17 @@
 import React, {useEffect} from "react";
 import PropTypes from "prop-types";
-import Answer from "./Answer";
+import AnswerItem from "./AnswerItem";
 import axios from "axios";
-import {STORAGE_QUESTIONS_URL} from "../constants";
+import {QUESTIONS_URL} from "../constants/url";
 
-function QuestionItem({questionId}) {
+function AnswerList({questionId}) {
 
     const [response, setResponse] = React.useState({question: null, answers: null});
 
     useEffect(() => {
         const fetchData = async () => {
-            const questionResponse = await axios(STORAGE_QUESTIONS_URL + `/getQuestion?id=${questionId}`);
-            const answersResponse = await axios(STORAGE_QUESTIONS_URL + `/${questionId}/getAnswersTree`);
+            const questionResponse = await axios(QUESTIONS_URL + `/getQuestion?id=${questionId}`);
+            const answersResponse = await axios(QUESTIONS_URL + `/${questionId}/getAnswersTree`);
             setResponse({question: questionResponse.data, answers: answersResponse.data});
         };
         fetchData();
@@ -32,15 +32,15 @@ function QuestionItem({questionId}) {
             {response.question && <h1>{response.question.title}</h1>}
             {response.answers && walkTheAnswers([], response.answers, 0)
                 .map(answer => {
-                    return <Answer answer={answer}/>
+                    return <AnswerItem answer={answer}/>
                 })
             }
         </div>
     )
 }
 
-QuestionItem.propTypes = {
+AnswerList.propTypes = {
     questionId: PropTypes.number.isRequired,
 };
 
-export default QuestionItem
+export default AnswerList

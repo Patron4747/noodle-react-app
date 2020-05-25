@@ -1,12 +1,13 @@
 import React, {useEffect} from "react";
 import PropTypes from "prop-types";
-import {STORAGE_QUESTIONS_URL} from "../constants";
+import {QUESTIONS_URL} from "../constants/url";
+import QuestionItem from "./QuestionItem";
 
 function QuestionList({showQuestionItem}) {
 
     const [questionList, setQuestionList] = React.useState([]);
     useEffect(() => {
-        fetch(STORAGE_QUESTIONS_URL + "/getAllQuestions")
+        fetch(QUESTIONS_URL + "/getAllQuestions")
             .then(response => response.json())
             .then(response => {
                 setQuestionList(response)
@@ -15,15 +16,8 @@ function QuestionList({showQuestionItem}) {
 
     return (
         <div>
-            <h1>QuestionList</h1>
             {questionList.map((question, index) => {
-                return <span key={index}>
-                    <button className={'question-list-button'}
-                            onClick={() => showQuestionItem(question.id)}>
-                        {question.title}
-                    </button>
-                    <br/>
-                </span>
+                return <QuestionItem showQuestionItem={showQuestionItem} question={question}/>
             })}
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
-import QuestionList from "./noodles/QuestionList";
-import QuestionItem from "./noodles/QuestionItem";
+import QuestionList from "./components/QuestionList";
+import AnswerList from "./components/AnswerList";
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
     return (
         <div className='wrapper'>
             {showQuestionList && <QuestionList showQuestionItem={showQuestionItem}/>}
-            {!showQuestionList && <QuestionItem questionId={questionId}/>}
+            {!showQuestionList && <AnswerList questionId={questionId}/>}
         </div>
     );
 }

@@ -1,0 +1,1 @@
+export const QUESTIONS_URL = "http://localhost:8013/resource/question";
