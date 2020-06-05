@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="babf3822-0dab-4270-9b0b-7016d91f1b36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/QuestionItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/NavBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/SignIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/url.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/url.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/noodles/Answer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnswerItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/noodles/QuestionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnswerList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/noodles/QuestionList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuestionList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\WebStormProjects\noodle-react-app\src\components\navbar" />
       <recent name="D:\Work\WebStormProjects\noodle-react-app\src\constants" />
     </key>
   </component>
@@ -83,7 +85,9 @@
       <workItem from="1589702541159" duration="6715000" />
       <workItem from="1589785160021" duration="396000" />
       <workItem from="1589788254592" duration="5525000" />
-      <workItem from="1590247286309" duration="2728000" />
+      <workItem from="1590247286309" duration="9698000" />
+      <workItem from="1591276576329" duration="1912000" />
+      <workItem from="1591349518007" duration="8397000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1589354577121</created>
@@ -99,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589709992030</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add question item component, change backend url">
+      <created>1590393648233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590393648233</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add axios, question and answers http calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="add axios, question and answers http calls" />
+    <MESSAGE value="add question item component, change backend url" />
+    <option name="LAST_COMMIT_MESSAGE" value="add question item component, change backend url" />
   </component>
 </project>
